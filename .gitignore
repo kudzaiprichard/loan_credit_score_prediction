@@ -1,0 +1,44 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ipython/
+build/
+dist/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ---- IDE / editor ----
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---- Project artifacts ----
+# Serialized models are large & reproducible from src/train.py -> keep out of git.
+models/*.joblib
+models/*.pkl
+scored_applicants.csv
+
+# Keep results/ figures + metrics tracked (they are the deliverables),
+# but ignore any scratch.
+results/**/*.tmp
+
+# ---- Data ----
+# global_company.csv (~18MB) is tracked. For larger raw dumps, prefer git-lfs:
+# *.parquet
+# Datasets/*_large.csv
