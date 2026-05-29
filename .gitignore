@@ -30,8 +30,7 @@ Thumbs.db
 
 # ---- Project artifacts ----
 # Serialized models are large & reproducible from src/train.py -> keep out of git.
-models/*.joblib
-models/*.pkl
+models/
 scored_applicants.csv
 
 # Keep results/ figures + metrics tracked (they are the deliverables),
@@ -41,4 +40,4 @@ results/**/*.tmp
 # ---- Data ----
 # global_company.csv (~18MB) is tracked. For larger raw dumps, prefer git-lfs:
 # *.parquet
-# Datasets/*_large.csv
+# datasets/*_large.csv

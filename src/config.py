@@ -11,7 +11,7 @@ from pathlib import Path
 # Paths
 # --------------------------------------------------------------------------- #
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "Datasets"
+DATA_DIR = ROOT / "datasets"
 RAW_DATA = DATA_DIR / "global_company.csv"
 MODELS_DIR = ROOT / "models"
 RESULTS_DIR = ROOT / "results"
