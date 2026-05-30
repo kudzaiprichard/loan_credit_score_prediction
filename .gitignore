@@ -38,6 +38,5 @@ scored_applicants.csv
 results/
 
 # ---- Data ----
-# global_company.csv (~18MB) is tracked. For larger raw dumps, prefer git-lfs:
-# *.parquet
-# datasets/*_large.csv
+# Datasets are large and not committed; obtain them out-of-band (or via git-lfs).
+datasets/
